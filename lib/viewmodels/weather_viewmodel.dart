@@ -19,7 +19,8 @@ class WeatherViewModel extends ChangeNotifier {
   List<String> _savedCities = [];
 
   WeatherViewModel(this._weatherService, this._locationStore) {
-    _loadSavedCitiesAsync();
+    // Load saved cities asynchronously without blocking the constructor
+    Future.microtask(() => _loadSavedCitiesAsync());
   }
 
   // Getters

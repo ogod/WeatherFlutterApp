@@ -18,10 +18,21 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => WeatherViewModel(
-            WeatherService(AppConfig.openWeatherMapApiKey),
-            LocationStore(),
-          ),
+          create: (context) {
+            try {
+              return WeatherViewModel(
+                WeatherService(AppConfig.openWeatherMapApiKey),
+                LocationStore(),
+              );
+            } catch (e) {
+              // If there's an error creating the WeatherViewModel, create a fallback
+              print('Error creating WeatherViewModel: $e');
+              return WeatherViewModel(
+                WeatherService('YOUR_API_KEY_HERE'),
+                LocationStore(),
+              );
+            }
+          },
         ),
       ],
       child: MaterialApp(

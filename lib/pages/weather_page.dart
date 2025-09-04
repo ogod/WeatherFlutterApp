@@ -47,7 +47,7 @@ class _WeatherPageState extends State<WeatherPage> {
 
                     // App Title
                     const Text(
-                      'Weather App',
+                      'Weather Flutter',
                       style: TextStyle(
                         fontSize: 36,
                         fontWeight: FontWeight.bold,

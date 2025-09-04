@@ -1,11 +1,11 @@
 {
-    "name": "weather_flutter_app",
-    "short_name": "weather_flutter_app",
+    "name": "Weather App",
+    "short_name": "Weather",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A beautiful weather application with dynamic backgrounds and real-time weather data.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

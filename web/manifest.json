@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#hexcode",
     "theme_color": "#hexcode",
-    "description": "A beautiful weather application with dynamic backgrounds and real-time weather data.",
+    "description": "A beautiful weather application with dynamic backgrounds and real-time weather data. Copyright © 2025 Owen Godfrey.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

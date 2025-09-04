@@ -1,6 +1,6 @@
 {
-    "name": "Weather App",
-    "short_name": "Weather",
+    "name": "Weather Flutter",
+    "short_name": "Weather Flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hexcode",

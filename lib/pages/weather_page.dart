@@ -107,7 +107,7 @@ class _WeatherPageState extends State<WeatherPage> {
                 // City Picker
                 Expanded(
                   child: DropdownButtonFormField<String>(
-                    value: viewModel.selectedCity,
+                    initialValue: viewModel.selectedCity,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       contentPadding: EdgeInsets.symmetric(
